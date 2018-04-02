@@ -26,13 +26,18 @@ class LivrosController extends Controller
         $livro->descricao = $request->descricao;
         
         //grava no banco (persistir os dados)
-        
+
         $livro->save();
 
         //substitui o Location
         return redirect('/');
         
         
+    }
+
+    public function lista()
+    {
+        return view('lista');
     }
 
 }

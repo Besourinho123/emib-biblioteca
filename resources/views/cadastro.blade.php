@@ -12,7 +12,7 @@
 <body>
 
         <h1>Cadastro de Livros</h1>
-
+        <br>
         <form action="/save" method="post">
         {{ csrf_field() }}
        
@@ -39,6 +39,8 @@
         </div>
 
         <button class="btn btn-primary">Enviar</button>
+
+        <a href='/lista' class="btn btn-primary" >Lista</a>
     </form>
 
     

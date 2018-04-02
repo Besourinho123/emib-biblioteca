@@ -12,4 +12,5 @@
 */
 
 Route::get('/', 'LivrosController@index'); 
-Route::get('/save', 'LivrosController@save'); 
+Route::post('/save', 'LivrosController@save'); 
+Route::get('/lista', 'LivrosController@lista'); 
