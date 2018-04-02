@@ -11,42 +11,35 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-            <h1 class="display-3">Página de cadastro</h1>
+        <h1>Cadastro de Livros</h1>
 
-    <form action="/salva" method="post">
+        <form action="/save" method="post">
         {{ csrf_field() }}
        
        <div class="form-group">
-        <label for="nome">Nome</label>
+        <label for="nome">Nome do Livro</label>
         <input class="form-control" type="text" id="nome" name="nome">
        </div>
        
        <div class="form-group">
     
-        <label for="idade">Idade</label>
-        <input class="form-control" type="text" id="idade" name="idade">
+        <label for="autor">Autor(a)</label>
+        <input class="form-control" type="text" id="autor" name="autor">
         </div>
     
         <div class="form-group">
-            <label for="email">Email</label>
-            <input class="form-control" type="text" id="email" name="email">
+            <label for="editora">Editora</label>
+            <input class="form-control" type="text" id="editora" name="editora">
         </div>
         
         <div class="form-group">
     
-        <label for="nascimento">Data de nascimento</label>
-        <input class="form-control" type="date" id="nascimento" name="nascimento">
+        <label for="descricao">Descrição</label>
+        <input class="form-control" type="text" id="descricao" name="descricao">
         </div>
 
         <button class="btn btn-primary">Enviar</button>
     </form>
-            
-            </div>
-        </div>
-    </div>
 
     
 </body>

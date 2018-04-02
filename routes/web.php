@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'LivrosController@index'); 
+Route::get('/save', 'LivrosController@save'); 
