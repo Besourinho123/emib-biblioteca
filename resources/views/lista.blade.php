@@ -10,11 +10,31 @@
 </head>
 <body>
 
-<div class="container">
 
-        <h1>Lista de Livros!</h1>
-
-        
+        <h1>Lista de Livros</h1>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Autor</th>
+                    <th>Editora</th>
+                    <th>Descrição</th>
+                
+                </tr>
+            </thead>
+            <tbody>
+            @foreach($dados as $value)
+                <tr>
+                    <td>{{ $value->nome }}</td>
+                    <td>{{ $value->autor }}</td>
+                    <td>{{ $value->editora }}</td>
+                    <td>{{ $value->descricao }}</td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+       
    
 
 </body>

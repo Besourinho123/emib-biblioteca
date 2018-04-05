@@ -37,7 +37,9 @@ class LivrosController extends Controller
 
     public function lista()
     {
-        return view('lista');
+        $dados = Livro::all();
+        return view('lista', compact('dados'));
     }
+
 
 }
