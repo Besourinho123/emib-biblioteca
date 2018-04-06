@@ -10,7 +10,7 @@
     <title>Página de cadastro</title>
 </head>
 <body>
-
+<div class="container">
         <h1>Cadastro de Livros</h1>
         <br>
         <form action="/save" method="post">
@@ -42,7 +42,7 @@
 
         <a href='/lista' class="btn btn-primary" >Lista</a>
     </form>
-
+</div>
     
 </body>
 </html>

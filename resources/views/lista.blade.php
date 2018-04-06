@@ -14,7 +14,7 @@
 
         <h1>Lista de Livros</h1>
         <br>
-        <table>
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Nome</th>
