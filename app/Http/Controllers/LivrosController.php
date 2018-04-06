@@ -41,5 +41,33 @@ class LivrosController extends Controller
         return view('lista', compact('dados'));
     }
 
+    public function update(Request $request)
+    {
+        //$_POST['nome']
+        //busca os dados do livro requisitado 
+        $livro = Livro::find($request->id);
+        //coloca na model os dados vindos do formulario
+        $livro->nome = $request->nome;
+        $livro->idade = $request->idade;
+        $livro->email = $request->email;
+        $livro->data = $request->nascimento;
+        
+        //grava no banco (persistir os dados)
+
+        $livro->save();
+        //substitui o Location
+
+        return redirect('/');
+        
+        
+    }
+
+    public function delete(Livro $livro)
+    {
+        $livro->delete();
+        return redirect('/');
+        
+        //return 'ok';
+    }
 
 }

@@ -33,10 +33,15 @@
                     <td>{{ $value->descricao }}</td>
                 </tr>
             @endforeach
+            
             </tbody>
         </table>
        
 </div>
+
+<script>
+
+</script>
 
 </body>
 </html>
