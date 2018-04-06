@@ -40,7 +40,7 @@
 
         <button class="btn btn-primary">Enviar</button>
 
-        <a href='/lista' class="btn btn-primary" >Lista</a>
+        <a href='/' class="btn btn-primary" >Lista</a>
     </form>
 </div>
     

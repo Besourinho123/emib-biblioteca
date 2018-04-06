@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', 'LivrosController@index'); 
+Route::get('/', 'LivrosController@lista'); 
 
-Route::get('/lista', 'LivrosController@lista'); 
+Route::get('/cadastro', 'LivrosController@index'); 
 Route::get('/editar/{dados}', 'LivrosController@editaLista');
 
 Route::post('/save', 'LivrosController@save'); 

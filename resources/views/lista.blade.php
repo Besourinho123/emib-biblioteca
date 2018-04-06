@@ -13,7 +13,8 @@
 <div class="container">
 
         <h1>Lista de Livros</h1>
-        <br>
+        <a href="/cadastro" class="btn btn-primary">Cadastro</a>
+        <br><br>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -48,6 +49,8 @@
             
             </tbody>
         </table>
+        
+       
 
        
 </div>
