@@ -12,7 +12,10 @@
 */
 
 Route::get('/', 'LivrosController@index'); 
-Route::post('/save', 'LivrosController@save'); 
-Route::get('/lista', 'LivrosController@lista'); 
 
-Route::get('/editar', 'LivrosController@editaLista'); 
+Route::get('/lista', 'LivrosController@lista'); 
+Route::get('/editar/{dados}', 'LivrosController@editaLista');
+
+Route::post('/save', 'LivrosController@save'); 
+Route::post('/update', 'LivrosController@update');
+Route::post('/delete/{livro}', 'LivrosController@delete');

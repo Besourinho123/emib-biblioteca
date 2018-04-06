@@ -35,11 +35,22 @@ class LivrosController extends Controller
         
     }
 
+
     public function lista()
     {
         $dados = Livro::all();
         return view('lista', compact('dados'));
     }
+
+
+    public function editaLista(Livro $dados)
+    {
+
+        return view('editar', compact('dados'));
+    
+    }
+
+
 
     public function update(Request $request)
     {
@@ -47,10 +58,7 @@ class LivrosController extends Controller
         //busca os dados do livro requisitado 
         $livro = Livro::find($request->id);
         //coloca na model os dados vindos do formulario
-        $livro->nome = $request->nome;
-        $livro->idade = $request->idade;
-        $livro->email = $request->email;
-        $livro->data = $request->nascimento;
+        $livro->descricao = $request->descricao;
         
         //grava no banco (persistir os dados)
 

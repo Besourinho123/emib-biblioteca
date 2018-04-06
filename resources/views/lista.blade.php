@@ -32,16 +32,28 @@
                     <td>{{ $value->editora }}</td>
                     <td>{{ $value->descricao }}</td>
                 </tr>
+                <td>
+                <a class="btn btn-primary" href="/editar/{{ $value->id }}"><span class="fa fa-wrench "></span></a>    
+                    <form method="post" style="display: inline;" action="/delete/{{ $value->id }}">
+                       {{csrf_field()}}
+                        <button class="btn btn-danger"><span class="fa fa-trash "></span></button>
+                    </form>
+                   
+                    
+                </td>
+                
+            </tr>
+
             @endforeach
             
             </tbody>
         </table>
+
        
 </div>
 
-<script>
 
-</script>
+
 
 </body>
 </html>
