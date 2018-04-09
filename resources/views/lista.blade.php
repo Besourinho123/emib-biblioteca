@@ -32,7 +32,7 @@
                     <td>{{ $value->autor }}</td>
                     <td>{{ $value->editora }}</td>
                     <td>{{ $value->descricao }}</td>
-                </tr>
+                
                 <td>
                 <a class="btn btn-primary" href="/editar/{{ $value->id }}"><span class="fa fa-wrench "></span></a>    
                     <form method="post" style="display: inline;" action="/delete/{{ $value->id }}">

@@ -43,6 +43,17 @@
         <a href='/' class="btn btn-primary" >Lista</a>
     </form>
 </div>
+
+<br>
+
+<div class="container">
+
+    @if(session('message') == '')
+
+    @else 
+        <p class="alert alert-success">{{session('message')}}</p>
+    @endif
+</div>
     
 </body>
 </html>

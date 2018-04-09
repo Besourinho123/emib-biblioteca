@@ -30,7 +30,7 @@ class LivrosController extends Controller
         $livro->save();
 
         //substitui o Location
-        return redirect('/');
+        return redirect('/cadastro') -> with('message', "Livro $request->nome adicionado com sucesso");
         
         
     }
